@@ -296,10 +296,15 @@ button,input,textarea{ font:inherit; color:inherit; }
 .profil-body .lede{ font-size:var(--t-lede); color:var(--ink); }
 .profil-body p{ color:var(--muted); }
 .profil-body strong{ color:var(--ink); font-weight:600; }
-.profil-off{
-  margin-top:1.6rem !important; padding-left:1.1rem;
-  border-left:2px solid var(--acc-line); font-style:italic;
+.philo{
+  margin-top:1.9rem; padding-left:1.15rem;
+  border-left:2px solid var(--acc-line);
 }
+.philo-title{
+  font-family:var(--mono); font-size:.7rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--acc); margin-bottom:.45rem;
+}
+.philo p{ font-style:italic; }
 
 .profil-side{ display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; }
 .fact{ display:flex; flex-direction:column; gap:.22rem; padding:1rem 1.15rem; background:var(--bg-2); }
