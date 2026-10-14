@@ -1,475 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Issiaka SIDIBE — Ingénieur Logiciel &amp; DevOps</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Issiaka SIDIBE · Ingénieur Logiciel &amp; DevOps</title>
 
-<meta name="description" content="Issiaka SIDIBE — Ingénieur logiciel et DevOps basé à Abidjan. Je conçois, déploie et fiabilise des systèmes distribués, et j'y intègre des agents IA (MCP, RAG, LLM)." />
-<meta name="author" content="Issiaka SIDIBE" />
-<meta name="theme-color" content="#07090b" />
-<meta name="color-scheme" content="dark" />
+<meta name="description" content="Issiaka SIDIBE, ingénieur logiciel et DevOps basé à Abidjan. Je conçois, déploie et fiabilise des systèmes distribués, et j'y intègre des agents IA (MCP, RAG, LLM).">
+<meta name="author" content="Issiaka SIDIBE">
+<meta name="theme-color" content="#07090b">
+<meta name="color-scheme" content="dark">
 
-<meta property="og:type" content="profile" />
-<meta property="og:locale" content="fr_FR" />
-<meta property="og:title" content="Issiaka SIDIBE — Ingénieur Logiciel &amp; DevOps" />
-<meta property="og:description" content="Systèmes distribués, automatisation, agents IA. Java · Spring · Kubernetes · MCP." />
-<meta property="og:image" content="portrait.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Issiaka SIDIBE — Ingénieur Logiciel &amp; DevOps" />
-<meta name="twitter:description" content="Systèmes distribués, automatisation, agents IA. Java · Spring · Kubernetes · MCP." />
-<meta name="twitter:image" content="portrait.jpg" />
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Issiaka SIDIBE · Ingénieur Logiciel &amp; DevOps">
+<meta property="og:description" content="Systèmes distribués, automatisation, agents IA. Java · Spring · Kubernetes · MCP.">
+<meta property="og:image" content="portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Issiaka SIDIBE · Ingénieur Logiciel &amp; DevOps">
+<meta name="twitter:description" content="Systèmes distribués, automatisation, agents IA. Java · Spring · Kubernetes · MCP.">
+<meta name="twitter:image" content="portrait.jpg">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090b'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' font-weight='700' fill='%2300e7a5' text-anchor='middle'%3EIS%3C/text%3E%3C/svg%3E" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="image" href="portrait.jpg" />
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090b'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' font-weight='700' fill='%2300e7a5' text-anchor='middle'%3EIS%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/portrait-cut.webp" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/space-grotesk-latin.woff2" crossorigin>
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 
-<div class="atmos" aria-hidden="true">
-  <div class="atmos-grid"></div>
-  <div class="atmos-glow atmos-glow--a"></div>
-  <div class="atmos-glow atmos-glow--b"></div>
-  <div class="atmos-noise"></div>
-</div>
-
-<div class="progress" id="progress" aria-hidden="true"><i></i></div>
-
-<!-- ══════════ NAV ══════════ -->
-<header class="nav" id="nav">
-  <a class="mark" href="#top" aria-label="Issiaka SIDIBE — retour en haut">
+<header class="bar">
+  <a class="mark" href="#top" aria-label="Issiaka SIDIBE, retour en haut">
     <span class="mark-glyph">IS</span>
     <span class="mark-name">Issiaka <b>SIDIBE</b></span>
   </a>
-
-  <nav class="menu" id="menu" aria-label="Navigation principale">
-    <a href="#profil"      class="menu-link"><i>01</i>Profil</a>
-    <a href="#expertise"   class="menu-link"><i>02</i>Expertise</a>
-    <a href="#travaux"     class="menu-link"><i>03</i>Travaux</a>
-    <a href="#labo"        class="menu-link"><i>04</i>Labo</a>
-    <a href="#parcours"    class="menu-link"><i>05</i>Parcours</a>
-    <a href="#contact"     class="menu-cta">Me contacter</a>
+  <nav class="bar__nav" aria-label="Navigation principale">
+    <a class="bar__link" href="#travaux">Travaux</a>
+    <a class="bar__link" href="CV-Issiaka-SIDIBE.pdf" download>CV</a>
+    <a class="bar__cta" href="#contact">Me contacter</a>
   </nav>
-
-  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
-    <span></span><span></span>
-  </button>
 </header>
 
 <main id="main">
 
-<!-- ══════════ HERO ══════════ -->
-<section class="hero" id="top">
-  <div class="hero-text">
-    <p class="status stg" style="--d:0">
-      <span class="pulse" aria-hidden="true"></span>
-      Disponible pour une collaboration
-    </p>
+<!-- 1 · Le nom en très grand derrière le portrait détouré. -->
+<section class="hero" id="top" data-sc-act="pin" data-sc-span="1.9" aria-labelledby="hero-name">
+  <div data-sc-stage class="hero__stage">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
 
-    <h1 class="hero-title stg" style="--d:1">
-      <span class="hero-pre">Ingénieur logiciel</span>
-      Issiaka<br /><span class="hero-accent">SIDIBE</span>
-    </h1>
+    <h1 id="hero-name" class="hero__name"><span>Issiaka</span> <span class="hero__name-b">SIDIBE</span></h1>
 
-    <p class="hero-role stg" style="--d:2">
-      <span>DevOps</span><span>Systèmes distribués</span><span>Agents IA</span>
-    </p>
-
-    <p class="hero-lede stg" style="--d:3">
-      Je conçois, déploie et fiabilise des applications critiques — du code Java
-      jusqu'au cluster en production. Ma spécialité du moment&nbsp;: brancher des
-      <strong>agents IA</strong> et des serveurs <strong>MCP</strong> sur des
-      systèmes métier réels, pas sur des démos.
-    </p>
-
-    <div class="hero-cta stg" style="--d:4">
-      <a class="btn btn--solid" href="#travaux">Voir mes travaux</a>
-      <a class="btn btn--wire" href="#contact">Me contacter</a>
-      <a class="btn btn--bare" href="CV-Issiaka-SIDIBE.pdf" download>Télécharger le CV <span aria-hidden="true">↓</span></a>
+    <div class="hero__portrait">
+      <img src="assets/portrait-cut.webp" width="1196" height="1840" alt="Portrait d'Issiaka SIDIBE, en costume bleu, bras croisés." fetchpriority="high">
     </div>
 
-    <dl class="hero-meta stg" style="--d:5">
-      <div><dt>Base</dt><dd>Abidjan, CI</dd></div>
-      <div><dt>Langues</dt><dd>FR · EN</dd></div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__veil" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <p class="status" data-sc-cue="0 0.4 0 0.4"><span class="pulse" aria-hidden="true"></span>Disponible pour une collaboration</p>
+      <p class="hero__role" data-sc-cue="0 0.4 0 0.4">Ingénieur logiciel · DevOps · Agents IA</p>
+      <p class="hero__lede" data-sc-cue="0 0.42 0 0.4">Je conçois, déploie et fiabilise des applications critiques, du code Java jusqu'au cluster en production.</p>
+      <div class="hero__cta" data-sc-cue="0 0.42 0 0.4">
+        <a class="btn btn--solid" href="#travaux">Voir mes travaux</a>
+        <a class="btn btn--bare" href="CV-Issiaka-SIDIBE.pdf" download>Télécharger le CV <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <p class="hero__claim" data-sc-cue="0.5 1 0.3 0.12" data-sc-kinetic="lines">Brancher des agents IA sur des systèmes métier réels, pas sur des démos.</p>
+    <div class="hero__floor" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- 2 · Profil -->
+<section class="band" id="profil" data-sc-act="flow" aria-labelledby="profil-title">
+  <div class="profil">
+    <div class="profil-body sc-stack" data-sc-in data-sc-stagger="70">
+      <h2 id="profil-title" class="band-title">L'ingénieur derrière la stack</h2>
+      <p class="lede">Je conçois, développe, déploie et fiabilise des <strong>applications critiques</strong>, du code jusqu'à la production. Mon approche couvre l'ensemble du cycle de vie d'une application&nbsp;: développement, intégration, déploiement, supervision et optimisation.</p>
+      <p>Aujourd'hui, je m'intéresse particulièrement à l'intégration de l'<strong>IA dans les systèmes métier</strong>. Je développe des agents IA, exploite des serveurs <strong>MCP</strong> (Model Context Protocol) et connecte les modèles d'IA à des applications et bases de données réelles afin d'automatiser des processus et de simplifier l'accès à l'information.</p>
+      <p>Je développe également des applications et sites web modernes, avec une attention particulière portée à la fiabilité, à la sécurité et à la maintenabilité.</p>
+      <blockquote class="philo">Je suis animé par une forte curiosité technique&nbsp;: j'aime apprendre et surtout comprendre ce que je ne maîtrise pas encore.</blockquote>
+    </div>
+
+    <dl class="facts" data-sc-in data-sc-stagger="50">
+      <div><dt>Fonction</dt><dd>Ingénieur Logiciel / DevOps</dd></div>
+      <div><dt>Localisation</dt><dd>Abidjan, Cocody, Côte d'Ivoire</dd></div>
+      <div><dt>Formation</dt><dd>INP-HB, ESI, Informatique</dd></div>
+      <div><dt>Langues</dt><dd>Français (courant) · Anglais (B1)</dd></div>
       <div><dt>Terrain</dt><dd>Backend · Infra · IA</dd></div>
+      <div><dt>Centres d'intérêt</dt><dd>Voyage · Football · Lecture</dd></div>
     </dl>
   </div>
+</section>
 
-  <div class="hero-visual stg" style="--d:2">
-    <figure class="shot">
-      <span class="shot-bracket shot-bracket--tl" aria-hidden="true"></span>
-      <span class="shot-bracket shot-bracket--br" aria-hidden="true"></span>
-      <img src="portrait.jpg" alt="Portrait d'Issiaka SIDIBE" width="683" height="1024" fetchpriority="high" />
-      <figcaption class="shot-spec">
-        <span><i>ROLE</i>Software Engineer</span>
-        <span><i>OPS</i>Docker · K8s · CI/CD</span>
-        <span><i>AI</i>MCP · RAG · LLM</span>
-      </figcaption>
-    </figure>
+<!-- 3 · Expertise : des lignes de mots qui glissent avec le défilement. -->
+<section class="xp" id="expertise" data-sc-act="flow" aria-labelledby="xp-title">
+  <h2 id="xp-title" class="band-title xp__title">Ce que je manipule au quotidien</h2>
+  <div class="xp__rows">
+    <div class="xp__row"><h3>IA &amp; Agents</h3><ul data-xp><li class="hot">Agents IA</li><li class="hot">Serveurs MCP</li><li class="hot">RAG</li><li>Spring AI</li><li>Prompt Engineering</li><li>Intégration LLM</li><li>Rasa</li></ul></div>
+    <div class="xp__row xp__row--rev"><h3>Backend</h3><ul data-xp><li>Java</li><li>Spring Boot</li><li>Spring Cloud</li><li>Python</li><li>Node.js</li><li>REST</li><li>GraphQL</li><li>gRPC</li><li>SOAP</li></ul></div>
+    <div class="xp__row"><h3>DevOps &amp; Cloud</h3><ul data-xp><li>Docker</li><li>Kubernetes</li><li>Docker Swarm</li><li>Terraform</li><li>Ansible</li><li>Jenkins</li><li>GitLab CI</li><li>Argo CD</li><li>AWS</li></ul></div>
+    <div class="xp__row xp__row--rev"><h3>Architecture</h3><ul data-xp><li>Microservices</li><li>Event Sourcing</li><li>CQRS</li><li>DDD</li><li>SOLID</li><li>TDD</li><li>Design Patterns</li><li>UML · BPMN</li></ul></div>
+    <div class="xp__row"><h3>Données &amp; Flux</h3><ul data-xp><li>PostgreSQL</li><li>Oracle</li><li>SQL Server</li><li>MongoDB</li><li>Kafka</li><li>RabbitMQ</li><li>Airflow</li><li>Airbyte</li></ul></div>
+    <div class="xp__row xp__row--rev"><h3>Sécurité &amp; Observabilité</h3><ul data-xp><li>Keycloak</li><li>OIDC · JWT</li><li>Vault</li><li>TLS</li><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>Traefik · HAProxy</li></ul></div>
+    <div class="xp__row"><h3>Systèmes, réseaux &amp; frontend</h3><ul data-xp><li>Linux (Debian, CentOS)</li><li>Virtualisation type 1 &amp; 2</li><li>VMware · Proxmox</li><li>Réseaux</li><li>Cybersécurité</li><li>Angular</li><li>React</li><li>Thymeleaf</li><li>JavaScript</li><li>Shell</li></ul></div>
   </div>
 </section>
 
-<!-- ══════════ TICKER ══════════ -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track" id="tickerTrack">
-    <span>Java</span><span>Spring Boot</span><span>Angular</span><span>React</span><span>Node.js</span>
-    <span>Kubernetes</span><span>Docker</span><span>Terraform</span><span>Ansible</span><span>Jenkins</span>
-    <span>Kafka</span><span>RabbitMQ</span><span>Keycloak</span><span>PostgreSQL</span><span>Python</span>
-    <span>Spring AI</span><span>MCP</span><span>RAG</span><span>Grafana</span><span>Airflow</span>
-  </div>
-</div>
+<!-- 4 · Le sommet : un MT103 devient un pacs.008 sous la molette. -->
+<section class="conv" id="norme" data-sc-act="pin" data-sc-span="3.2" aria-labelledby="conv-title">
+  <div data-sc-stage class="conv__stage" data-sc-verify-state="0">
+    <header class="conv__head">
+      <h2 id="conv-title" class="conv__title">Même virement, deux normes.</h2>
+      <p class="conv__note">Faites défiler&nbsp;: un MT103 devient un pacs.008 (ISO&nbsp;20022), champ par champ. Exemple fictif et simplifié, converti pour de vrai dans votre navigateur.</p>
+    </header>
 
-<!-- ══════════ 01 · PROFIL ══════════ -->
-<section class="band" id="profil">
-  <header class="band-head reveal">
-    <span class="tag"><i>01</i>Profil</span>
-    <h2 class="band-title">L'ingénieur derrière la stack</h2>
-  </header>
-
-  <div class="profil">
-    <div class="profil-body reveal">
-      <p class="lede">
-        Je conçois, développe, déploie et fiabilise des <strong>applications critiques</strong>,
-        du code jusqu'à la production. Mon approche couvre l'ensemble du cycle de vie d'une
-        application&nbsp;: développement, intégration, déploiement, supervision et optimisation.
-      </p>
-      <p>
-        Aujourd'hui, je m'intéresse particulièrement à l'intégration de l'<strong>IA dans les
-        systèmes métier</strong>. Je développe des agents IA, exploite des serveurs
-        <strong>MCP</strong> (Model Context Protocol) et connecte les modèles d'IA à des
-        applications et bases de données réelles afin d'automatiser des processus et de
-        simplifier l'accès à l'information.
-      </p>
-      <p>
-        Je développe également des applications et sites web modernes, avec une attention
-        particulière portée à la fiabilité, à la sécurité et à la maintenabilité.
-      </p>
-
-      <div class="philo">
-        <h3 class="philo-title">Ma philosophie</h3>
-        <p>
-          Je suis animé par une forte curiosité technique&nbsp;: j'aime apprendre et surtout
-          comprendre ce que je ne maîtrise pas encore.
-        </p>
-      </div>
+    <div class="conv__panes">
+      <figure class="pane">
+        <figcaption>SWIFT MT103</figcaption>
+        <pre class="pane__code" data-mt aria-label="Message MT103 d'exemple"></pre>
+      </figure>
+      <figure class="pane">
+        <figcaption>ISO 20022 · pacs.008</figcaption>
+        <pre class="pane__code" data-mx aria-label="Message pacs.008 produit"></pre>
+      </figure>
     </div>
 
-    <aside class="profil-side reveal">
-      <div class="fact"><span>Fonction</span><b>Ingénieur Logiciel / DevOps</b></div>
-      <div class="fact"><span>Localisation</span><b>Abidjan — Cocody, Côte d'Ivoire</b></div>
-      <div class="fact"><span>Formation</span><b>INP-HB — ESI, Informatique</b></div>
-      <div class="fact"><span>Langues</span><b>Français (courant) · Anglais (B1)</b></div>
-      <div class="fact"><span>Centres d'intérêt</span><b>Voyage · Football · Lecture</b></div>
-      <a class="fact fact--link" href="#contact"><span>Statut</span><b>Ouvert aux collaborations →</b></a>
-    </aside>
+    <div class="conv__foot">
+      <p class="conv__status" data-conv-status aria-live="polite"></p>
+      <label class="conv__amount">Montant en XOF
+        <input type="number" data-conv-amount value="1500000" min="1" max="999999999999" step="1" inputmode="numeric">
+      </label>
+    </div>
   </div>
 </section>
 
-<!-- ══════════ 02 · EXPERTISE ══════════ -->
-<section class="band" id="expertise">
-  <header class="band-head reveal">
-    <span class="tag"><i>02</i>Expertise</span>
-    <h2 class="band-title">Ce que je manipule au quotidien</h2>
+<!-- 5 · Travaux -->
+<section class="band" id="travaux" data-sc-act="flow" aria-labelledby="travaux-title">
+  <header class="band-head" data-sc-in data-sc-stagger="70">
+    <h2 id="travaux-title" class="band-title">Les systèmes sur lesquels j'ai livré</h2>
+    <p class="band-sub">Projets menés en contexte professionnel, pour des opérateurs télécoms, des institutions financières régionales et des administrations publiques.</p>
   </header>
 
-  <div class="bento">
-    <article class="cell cell--hero reveal">
-      <h3>IA &amp; Agents</h3>
-      <p class="cell-note">Le terrain que je pousse le plus loin en ce moment.</p>
-      <ul class="chips">
-        <li class="hot">Agents IA</li><li class="hot">Serveurs MCP</li><li class="hot">RAG</li>
-        <li>Spring AI</li><li>Prompt Engineering</li><li>Intégration LLM</li><li>Rasa</li>
-      </ul>
-    </article>
-
-    <article class="cell reveal">
-      <h3>Backend</h3>
-      <ul class="chips">
-        <li>Java</li><li>Spring Boot</li><li>Spring Cloud</li><li>Python</li>
-        <li>Node.js</li><li>REST</li><li>GraphQL</li><li>gRPC</li><li>SOAP</li>
-      </ul>
-    </article>
-
-    <article class="cell reveal">
-      <h3>DevOps &amp; Cloud</h3>
-      <ul class="chips">
-        <li>Docker</li><li>Kubernetes</li><li>Docker Swarm</li><li>Terraform</li>
-        <li>Ansible</li><li>Jenkins</li><li>GitLab CI</li><li>Argo CD</li><li>AWS</li>
-      </ul>
-    </article>
-
-    <article class="cell reveal">
-      <h3>Architecture</h3>
-      <ul class="chips">
-        <li>Microservices</li><li>Event Sourcing</li><li>CQRS</li><li>DDD</li>
-        <li>SOLID</li><li>TDD</li><li>Design Patterns</li><li>UML · BPMN</li>
-      </ul>
-    </article>
-
-    <article class="cell reveal">
-      <h3>Données &amp; Flux</h3>
-      <ul class="chips">
-        <li>PostgreSQL</li><li>Oracle</li><li>SQL Server</li><li>MongoDB</li>
-        <li>Kafka</li><li>RabbitMQ</li><li>Airflow</li><li>Airbyte</li>
-      </ul>
-    </article>
-
-    <article class="cell reveal">
-      <h3>Sécurité &amp; Observabilité</h3>
-      <ul class="chips">
-        <li>Keycloak</li><li>OIDC · JWT</li><li>Vault</li><li>TLS</li>
-        <li>Prometheus</li><li>Grafana</li><li>Loki</li><li>Traefik · HAProxy</li>
-      </ul>
-    </article>
-
-    <article class="cell cell--wide reveal">
-      <h3>Systèmes, réseaux &amp; frontend</h3>
-      <ul class="chips">
-        <li>Linux (Debian, CentOS)</li><li>Virtualisation type 1 &amp; 2</li><li>VMware · Proxmox</li>
-        <li>Réseaux</li><li>Cybersécurité</li><li>Angular</li><li>React</li><li>Thymeleaf</li>
-        <li>JavaScript</li><li>Shell</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<!-- ══════════ 03 · TRAVAUX ══════════ -->
-<section class="band" id="travaux">
-  <header class="band-head reveal">
-    <span class="tag"><i>03</i>Travaux</span>
-    <h2 class="band-title">Les systèmes sur lesquels j'ai livré</h2>
-    <p class="band-sub">Projets menés en contexte professionnel, pour des opérateurs télécoms,
-      des institutions financières régionales et des administrations publiques.</p>
-  </header>
-
-  <ol class="works">
-    <li class="work reveal">
-      <span class="work-idx">01</span>
-      <div class="work-main">
-        <h3>Agent IA pour un système de télécompensation</h3>
-        <p>Développement et déploiement en production d'un agent IA greffé sur une
-           plateforme de compensation interbancaire, pour assister les opérateurs
-           dans le traitement quotidien des flux.</p>
-      </div>
-      <ul class="work-tags"><li class="hot">Agent IA</li><li>Production</li><li>Automatisation</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">02</span>
-      <div class="work-main">
-        <h3>Interopérabilité des paiements — PI-SPI / BCEAO</h3>
-        <p>Contribution au chantier d'interopérabilité de la BCEAO, bâti sur la norme
-           <strong>ISO&nbsp;20022</strong>&nbsp;: modélisation des messages, intégration
-           et validation des échanges.</p>
-      </div>
-      <ul class="work-tags"><li>ISO 20022</li><li>Paiement instantané</li><li>Intégration</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">03</span>
-      <div class="work-main">
-        <h3>Solution RTGS — formats MT &amp; MX</h3>
-        <p>Conception d'une solution de règlement brut en temps réel gérant à la fois
-           l'ancienne norme <strong>MT</strong> et la norme <strong>MX (ISO&nbsp;20022)</strong>,
-           avec la couche de transformation entre les deux.</p>
-      </div>
-      <ul class="work-tags"><li>RTGS</li><li>SWIFT MT/MX</li><li>Backend Java</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">04</span>
-      <div class="work-main">
-        <h3>Applications de télécompensation — NewClearing &amp; Corporate</h3>
-        <p>Maintenance évolutive et corrective de deux applications de compensation
-           interbancaire en exploitation&nbsp;: reprise de code, correction d'incidents
-           de production, nouvelles fonctionnalités.</p>
-      </div>
-      <ul class="work-tags"><li>Java</li><li>Maintenance</li><li>Run</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">05</span>
-      <div class="work-main">
-        <h3>Accès indirect aux systèmes SICA-UEMOA &amp; STAR-UEMOA</h3>
-        <p>Solution d'accès indirect aux systèmes de paiement régionaux pour les
-           établissements pilotes, incluant le routage des flux et la conformité
-           aux formats attendus.</p>
-      </div>
-      <ul class="work-tags"><li>SICA-UEMOA</li><li>STAR-UEMOA</li><li>Interbancaire</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">06</span>
-      <div class="work-main">
-        <h3>Bornes de dépôt d'espèces en libre-service</h3>
-        <p>Développement, déploiement et maintenance de bornes automatiques de dépôt
-           d'espèces&nbsp;: pilotage du matériel de comptage, parcours utilisateur et
-           supervision du parc.</p>
-      </div>
-      <ul class="work-tags"><li>Self-service</li><li>Embarqué</li><li>Déploiement</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">07</span>
-      <div class="work-main">
-        <h3>Gestion commerciale des points de vente — MTN</h3>
-        <p>Système de gestion commerciale du réseau de distribution de monnaie
-           électronique&nbsp;: suivi des points de vente, des stocks et de l'activité
-           commerciale.</p>
-      </div>
-      <ul class="work-tags"><li>Télécom</li><li>Mobile Money</li><li>Fullstack</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">08</span>
-      <div class="work-main">
-        <h3>Gestion des permis de conduire — Gouvernement du Congo</h3>
-        <p>Plateforme de gestion du cycle de vie des permis de conduire pour une
-           administration nationale&nbsp;: dossiers, délivrance et suivi.</p>
-      </div>
-      <ul class="work-tags"><li>E-gouvernement</li><li>Métier</li><li>Web</li></ul>
-    </li>
-
-    <li class="work reveal">
-      <span class="work-idx">09</span>
-      <div class="work-main">
-        <h3>Core banking — Amplitude, Flexcube, Orion</h3>
-        <p>Connaissances acquises au contact de ces solutions et de leurs interfaces
-           d'intégration, dans le cadre des projets ci-dessus.</p>
-      </div>
-      <ul class="work-tags"><li>Amplitude</li><li>Flexcube</li><li>Orion</li></ul>
-    </li>
+  <ol class="works" data-focus-list>
+    <li class="work"><h3>Agent IA pour un système de télécompensation</h3><p>Développement et déploiement en production d'un agent IA greffé sur une plateforme de compensation interbancaire, pour assister les opérateurs dans le traitement quotidien des flux.</p><p class="work-tags">Agent IA · Production · Automatisation</p></li>
+    <li class="work"><h3>Interopérabilité des paiements, PI-SPI / BCEAO</h3><p>Contribution au chantier d'interopérabilité de la BCEAO, bâti sur la norme <strong>ISO&nbsp;20022</strong>&nbsp;: modélisation des messages, intégration et validation des échanges.</p><p class="work-tags">ISO 20022 · Paiement instantané · Intégration</p></li>
+    <li class="work"><h3>Solution RTGS, formats MT &amp; MX</h3><p>Conception d'une solution de règlement brut en temps réel gérant à la fois l'ancienne norme <strong>MT</strong> et la norme <strong>MX (ISO&nbsp;20022)</strong>, avec la couche de transformation entre les deux.</p><p class="work-tags">RTGS · SWIFT MT/MX · Backend Java</p></li>
+    <li class="work"><h3>Applications de télécompensation, NewClearing &amp; Corporate</h3><p>Maintenance évolutive et corrective de deux applications de compensation interbancaire en exploitation&nbsp;: reprise de code, correction d'incidents de production, nouvelles fonctionnalités.</p><p class="work-tags">Java · Maintenance · Run</p></li>
+    <li class="work"><h3>Accès indirect aux systèmes SICA-UEMOA &amp; STAR-UEMOA</h3><p>Solution d'accès indirect aux systèmes de paiement régionaux pour les établissements pilotes, incluant le routage des flux et la conformité aux formats attendus.</p><p class="work-tags">SICA-UEMOA · STAR-UEMOA · Interbancaire</p></li>
+    <li class="work"><h3>Bornes de dépôt d'espèces en libre-service</h3><p>Développement, déploiement et maintenance de bornes automatiques de dépôt d'espèces&nbsp;: pilotage du matériel de comptage, parcours utilisateur et supervision du parc.</p><p class="work-tags">Self-service · Embarqué · Déploiement</p></li>
+    <li class="work"><h3>Gestion commerciale des points de vente, MTN</h3><p>Système de gestion commerciale du réseau de distribution de monnaie électronique&nbsp;: suivi des points de vente, des stocks et de l'activité commerciale.</p><p class="work-tags">Télécom · Mobile Money · Fullstack</p></li>
+    <li class="work"><h3>Gestion des permis de conduire, Gouvernement du Congo</h3><p>Plateforme de gestion du cycle de vie des permis de conduire pour une administration nationale&nbsp;: dossiers, délivrance et suivi.</p><p class="work-tags">E-gouvernement · Métier · Web</p></li>
+    <li class="work"><h3>Core banking : Amplitude, Flexcube, Orion</h3><p>Connaissances acquises au contact de ces solutions et de leurs interfaces d'intégration, dans le cadre des projets ci-dessus.</p><p class="work-tags">Amplitude · Flexcube · Orion</p></li>
   </ol>
 </section>
 
-<!-- ══════════ 04 · LABO ══════════ -->
-<section class="band" id="labo">
-  <header class="band-head reveal">
-    <span class="tag"><i>04</i>Labo</span>
-    <h2 class="band-title">Ce que je construis sur mon temps libre</h2>
-    <p class="band-sub">Projets personnels — là où je teste les architectures et les
-      outils avant de les proposer en mission.</p>
+<!-- 6 · Labo -->
+<section class="band" id="labo" data-sc-act="flow" aria-labelledby="labo-title">
+  <header class="band-head" data-sc-in data-sc-stagger="70">
+    <h2 id="labo-title" class="band-title">Ce que je construis sur mon temps libre</h2>
+    <p class="band-sub">Projets personnels, là où je teste les architectures et les outils avant de les proposer en mission.</p>
   </header>
 
-  <div class="labs">
-    <article class="lab lab--feat reveal">
-      <span class="lab-kind">IA</span>
-      <h3>Serveurs MCP &amp; agents IA</h3>
-      <p>Construction de serveurs <strong>Model Context Protocol</strong> et d'agents
-         autonomes branchés sur des cas d'usage métier concrets — outillage,
-         récupération de contexte, actions sur des systèmes existants.</p>
-      <ul class="chips small"><li>MCP</li><li>LLM</li><li>Agents</li><li>Python</li></ul>
-    </article>
-
-    <article class="lab reveal">
-      <span class="lab-kind">IA</span>
-      <h3>Prompt Engineering &amp; IA générative</h3>
-      <p>Chaînes RAG et applications génératives adossées à des bases documentaires.</p>
-      <ul class="chips small"><li>Spring AI</li><li>LLaMA / GPT</li><li>PostgreSQL</li><li>MongoDB</li></ul>
-    </article>
-
-    <article class="lab reveal">
-      <span class="lab-kind">Data</span>
-      <h3>Visualisation temps réel de données capteurs</h3>
-      <p>Pipeline de streaming et tableau de bord temps réel alimenté par un flux
-         d'événements continu.</p>
-      <ul class="chips small"><li>Kafka</li><li>Spring Boot</li><li>JavaScript</li><li>Docker</li></ul>
-    </article>
-
-    <article class="lab lab--wide reveal">
-      <span class="lab-kind">Ops</span>
-      <h3>Déploiement fullstack sur Kubernetes</h3>
-      <p>Mise en production d'une application complète sur cluster&nbsp;: StatefulSet,
-         ConfigMap, Secret, registry privée et stratégie de déploiement.</p>
-      <ul class="chips small"><li>Kubernetes</li><li>Helm</li><li>Registry</li></ul>
-    </article>
-  </div>
+  <ul class="labs" data-focus-list>
+    <li class="lab"><span class="lab-kind">IA</span><h3>Serveurs MCP &amp; agents IA</h3><p>Construction de serveurs <strong>Model Context Protocol</strong> et d'agents autonomes branchés sur des cas d'usage métier concrets&nbsp;: outillage, récupération de contexte, actions sur des systèmes existants.</p><p class="work-tags">MCP · LLM · Agents · Python</p></li>
+    <li class="lab"><span class="lab-kind">Web</span><h3>Sites animés au défilement</h3><p>Deux sites de démonstration construits avec Claude Code et le skill scroll-craft&nbsp;: <a href="https://issiaka002.github.io/nawa/" target="_blank" rel="noopener">NAWA, une chocolaterie fictive</a> et <a href="https://issiaka002.github.io/sbs-kisan/" target="_blank" rel="noopener">une maquette pour des automates de dépôt Kisan</a>.</p><p class="work-tags">HTML · CSS · JavaScript · Agents de code</p></li>
+    <li class="lab"><span class="lab-kind">IA</span><h3>Prompt Engineering &amp; IA générative</h3><p>Chaînes RAG et applications génératives adossées à des bases documentaires.</p><p class="work-tags">Spring AI · LLaMA / GPT · PostgreSQL · MongoDB</p></li>
+    <li class="lab"><span class="lab-kind">Data</span><h3>Visualisation temps réel de données capteurs</h3><p>Pipeline de streaming et tableau de bord temps réel alimenté par un flux d'événements continu.</p><p class="work-tags">Kafka · Spring Boot · JavaScript · Docker</p></li>
+    <li class="lab"><span class="lab-kind">Ops</span><h3>Déploiement fullstack sur Kubernetes</h3><p>Mise en production d'une application complète sur cluster&nbsp;: StatefulSet, ConfigMap, Secret, registry privée et stratégie de déploiement.</p><p class="work-tags">Kubernetes · Helm · Registry</p></li>
+  </ul>
 </section>
 
-<!-- ══════════ 05 · PARCOURS ══════════ -->
-<section class="band" id="parcours">
-  <header class="band-head reveal">
-    <span class="tag"><i>05</i>Parcours</span>
-    <h2 class="band-title">Formation &amp; certifications</h2>
-  </header>
-
+<!-- 7 · Parcours -->
+<section class="band" id="parcours" data-sc-act="flow" aria-labelledby="parcours-title">
+  <h2 id="parcours-title" class="band-title" data-sc-in>Formation &amp; certifications</h2>
   <div class="split">
-    <div class="timeline reveal">
+    <div class="timeline" data-sc-in data-sc-stagger="60">
       <h3 class="col-title">Formation</h3>
-      <div class="tl-item">
-        <span class="tl-year">2021 — 2022</span>
-        <b>Ingénierie Informatique</b>
-        <em>École Supérieure d'Industrie (ESI) — INP-HB</em>
-      </div>
-      <div class="tl-item">
-        <span class="tl-year">2021 — 2022</span>
-        <b>Sciences &amp; Technologies de l'Information et de la Communication (STIC)</b>
-        <em>École Supérieure d'Industrie (ESI) — INP-HB</em>
-      </div>
-      <div class="tl-item">
-        <span class="tl-year">2020 — 2021</span>
-        <b>Classe préparatoire — Mathématiques Physique (MP)</b>
-        <em>INP-HB</em>
-      </div>
-      <div class="tl-item">
-        <span class="tl-year">2020 — 2021</span>
-        <b>Classe préparatoire — MPSI</b>
-        <em>INP-HB</em>
-      </div>
+      <div class="tl-item"><span class="tl-year">2021 · 2022</span><b>Ingénierie Informatique</b><em>École Supérieure d'Industrie (ESI), INP-HB</em></div>
+      <div class="tl-item"><span class="tl-year">2021 · 2022</span><b>Sciences &amp; Technologies de l'Information et de la Communication (STIC)</b><em>École Supérieure d'Industrie (ESI), INP-HB</em></div>
+      <div class="tl-item"><span class="tl-year">2020 · 2021</span><b>Classe préparatoire, Mathématiques Physique (MP)</b><em>INP-HB</em></div>
+      <div class="tl-item"><span class="tl-year">2020 · 2021</span><b>Classe préparatoire, MPSI</b><em>INP-HB</em></div>
     </div>
 
-    <div class="certs reveal">
+    <div class="certs" data-sc-in data-sc-stagger="60">
       <h3 class="col-title">Certifications &amp; attestations</h3>
       <ul class="cert-list">
-        <li>
-          <b>AI Techniques: From Fundamentals to Applications</b>
-          <em>Polytechnique Montréal — Vision artificielle</em>
-        </li>
-        <li>
-          <b>Business Process Modeling (BPM)</b>
-          <em>Edulib — en cours</em>
-        </li>
-        <li>
-          <b>Administration AWS · CompTIA Security+</b>
-          <em>Udemy</em>
-        </li>
-        <li>
-          <b>Sauvegarde et restauration de données — Veeam Backup</b>
-          <em>Udemy</em>
-        </li>
-        <li>
-          <b>Virtualisation VMware vCenter / ESXi · Proxmox</b>
-          <em>Udemy</em>
-        </li>
+        <li><b>AI Techniques: From Fundamentals to Applications</b><em>Polytechnique Montréal, vision artificielle</em></li>
+        <li><b>Business Process Modeling (BPM)</b><em>Edulib, en cours</em></li>
+        <li><b>Administration AWS · CompTIA Security+</b><em>Udemy</em></li>
+        <li><b>Sauvegarde et restauration de données, Veeam Backup</b><em>Udemy</em></li>
+        <li><b>Virtualisation VMware vCenter / ESXi · Proxmox</b><em>Udemy</em></li>
       </ul>
-
-      <h3 class="col-title col-title--sp">Savoir-être</h3>
-      <ul class="chips soft">
-        <li>Communication</li><li>Esprit d'équipe</li><li>Rigueur</li>
-        <li>Organisation</li><li>Polyvalence</li>
-      </ul>
+      <p class="soft">Communication · Esprit d'équipe · Rigueur · Organisation · Polyvalence</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════ CONTACT ══════════ -->
-<section class="band contact" id="contact">
-  <div class="contact-shell">
-    <div class="contact-left reveal">
-      <span class="tag"><i>06</i>Contact</span>
-      <h2 class="contact-title">On construit<br /><span class="hero-accent">quelque chose&nbsp;?</span></h2>
-      <p class="contact-lede">
-        Mission, recrutement, projet à quatre mains ou simple question technique —
-        écrivez-moi, je réponds vite.
-      </p>
+<!-- 8 · Contact : après tout ce volume, le plus petit corps du site. -->
+<section class="band contact" id="contact" data-sc-act="flow" aria-labelledby="contact-title">
+  <h2 id="contact-title" class="contact-title" data-sc-cue="0.12 1 0.4 0" data-sc-kinetic="lines">On construit quelque chose ?</h2>
 
+  <div class="contact-shell">
+    <div class="contact-left" data-sc-in data-sc-stagger="50">
+      <p class="contact-lede">Mission, recrutement, projet à quatre mains ou simple question technique&nbsp;: écrivez-moi, je réponds vite.</p>
       <ul class="lines">
         <li><a href="mailto:issiaka.sidibe19@gmail.com"><i>Email</i><span>issiaka.sidibe19@gmail.com</span></a></li>
         <li><a href="mailto:sidibeissiaka999@gmail.com"><i>Collaboration</i><span>sidibeissiaka999@gmail.com</span></a></li>
@@ -477,44 +213,30 @@
         <li><a href="tel:+2250747845181"><i>Téléphone 2</i><span>+225 07 47 84 51 81</span></a></li>
         <li><a href="https://github.com/issiaka002" target="_blank" rel="noopener"><i>GitHub</i><span>github.com/issiaka002</span></a></li>
         <li><a href="https://www.linkedin.com/in/issiaka-sidib" target="_blank" rel="noopener"><i>LinkedIn</i><span>in/issiaka-sidib</span></a></li>
-        <li class="static"><i>Localisation</i><span>Abidjan — Cocody, Côte d'Ivoire</span></li>
+        <li class="static"><i>Localisation</i><span>Abidjan, Cocody, Côte d'Ivoire</span></li>
       </ul>
     </div>
 
-    <form class="wa reveal" id="waForm" novalidate>
+    <form class="wa" id="waForm" novalidate data-sc-in>
       <h3 class="wa-title"><span class="wa-dot" aria-hidden="true"></span>Message WhatsApp</h3>
-      <p class="wa-note">Le message part directement sur WhatsApp&nbsp;— pas de formulaire perdu dans la nature.</p>
-
-      <label class="field">
-        <span>Votre nom</span>
-        <input type="text" id="waName" name="name" autocomplete="name" placeholder="Ex. Awa Koné" required />
-      </label>
-
-      <label class="field">
-        <span>Sujet</span>
-        <input type="text" id="waSubject" name="subject" placeholder="Ex. Mission backend / DevOps" />
-      </label>
-
-      <label class="field">
-        <span>Message</span>
-        <textarea id="waMessage" name="message" rows="4" placeholder="Décrivez votre besoin en quelques lignes…" required></textarea>
-      </label>
-
+      <p class="wa-note">Le message part directement sur WhatsApp, pas dans un formulaire perdu dans la nature.</p>
+      <label class="field"><span>Votre nom</span><input type="text" id="waName" name="name" autocomplete="name" placeholder="Ex. Awa Koné" required></label>
+      <label class="field"><span>Sujet</span><input type="text" id="waSubject" name="subject" placeholder="Ex. Mission backend / DevOps"></label>
+      <label class="field"><span>Message</span><textarea id="waMessage" name="message" rows="4" placeholder="Décrivez votre besoin en quelques lignes…" required></textarea></label>
       <p class="wa-error" id="waError" role="alert" hidden></p>
-
       <button type="submit" class="btn btn--solid btn--full">Envoyer sur WhatsApp</button>
-      <a class="wa-alt" href="mailto:sidibeissiaka999@gmail.com?subject=Demande%20de%20collaboration">…ou par email</a>
+      <a class="wa-alt" href="mailto:sidibeissiaka999@gmail.com?subject=Demande%20de%20collaboration">ou par email</a>
     </form>
   </div>
+
+  <footer class="foot">
+    <span class="mark-glyph small">IS</span>
+    <p>© <span id="year">2026</span> Issiaka SIDIBE · Ingénieur Logiciel &amp; DevOps · Abidjan</p>
+    <a href="#top" class="foot-top">Haut de page ↑</a>
+  </footer>
 </section>
 
 </main>
-
-<footer class="foot">
-  <span class="mark-glyph small">IS</span>
-  <p>© <span id="year">2026</span> Issiaka SIDIBE — Ingénieur Logiciel &amp; DevOps · Abidjan</p>
-  <a href="#top" class="foot-top">Haut de page ↑</a>
-</footer>
 
 <script type="application/ld+json">
 {
@@ -531,6 +253,8 @@
 }
 </script>
 
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
 <script src="script.js" defer></script>
 </body>
 </html>
